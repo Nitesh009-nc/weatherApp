@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background: hsl(204, 72%, 38%);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.weather-app{
+    background: lightblue;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border:1px solid black;
+    border-radius: 15px;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+}
+input[type="text"]{
+    flex: 1;
+    padding:20px;
+    border: 2px solid rgba(0, 0, 255, 0.231);
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.search-btn{
+    background:rgba(0, 0, 255, 0.231) ;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+.search-btn:hover{
+    background:rgba(0, 0, 255, 0.813) ;
+}
+.city-date-section{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.city-date-section{
+    font-size: 2rem;
+    /* opacity: 0.3; */
+}
+.city-date-section .city{
+    color:black;
+}
+.city-date-section .date{
+    background: rgba(0, 128, 0, 0.389);
+    padding: 5px 10px;
+    border: 15px;
+}
+
+.temperature-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temperature-info .temp{
+    font-size: 10rem;
+}
+.temperature-info .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.temperature-info .description i{
+    font-size: 1rem;
+    opacity: 0.3;
+}
+.temperature-info .description span{
+    font-size: 1.5rem;
+}
+
+.additional-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.wind-info,
+.humidity-info,
+.visibility-info{
+    background: #ecf0f1;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.additional-info .material-icons{
+    font-size: 3rem;
+    opacity: 0.8;
+}
+.wind-info div,
+.humidity-info div,
+.visibility-info div{
+    text-align: center;
+}
